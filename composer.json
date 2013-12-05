@@ -1,0 +1,31 @@
+{
+    "name": "presta/cms-user-bundle",
+    "type": "symfony-bundle",
+    "description": "PrestaCMS User bundle : allow you to managed your front users",
+    "keywords": ["symfony2", "bundle", "cms", "symfony-cmf", "prestaconcept"],
+    "homepage": "https://github.com/prestaconcept/PrestaCMSUserBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Bastien",
+            "email": "nbastien@prestaconcept.net",
+            "homepage": "http://www.prestaconcept.net/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "suggest": {
+        "presta/cms-core-bundle": "1.0.*"
+    },
+    "autoload": {
+        "psr-0": { "Presta\\CMSUserBundle": "" }
+    },
+    "target-dir": "Presta/CMSUserBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
