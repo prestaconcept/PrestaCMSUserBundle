@@ -1,0 +1,6 @@
+sonata_block:
+    blocks:
+        sonata.user.block.menu:
+            contexts: [user]
+
+
