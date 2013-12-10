@@ -6,54 +6,56 @@
 {% block sonata_profile_content %}
     {{ form_errors(form) }}
 
-    <form action="{{ path('sonata_user_profile_edit') }}" method="POST" class="form-horizontal">
-        <div class="control-group">
+    <form action="{{ path('sonata_user_profile_edit') }}" method="POST" class="">
+        <div class="form-item">
             {{ form_errors(form.gender) }}
-            {{ form_label(form.gender, 'label_profile_gender', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.gender) }}</div>
+            {{ form_label(form.gender, 'label_profile_gender', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.gender) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.firstname) }}
-            {{ form_label(form.firstname, 'label_profile_firstname', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.firstname) }}</div>
+            {{ form_label(form.firstname, 'label_profile_firstname', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.firstname) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.lastname) }}
-            {{ form_label(form.lastname, 'label_profile_lastname', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.lastname) }}</div>
+            {{ form_label(form.lastname, 'label_profile_lastname', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.lastname) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.website) }}
-            {{ form_label(form.website , 'label_profile_website', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.website) }}</div>
+            {{ form_label(form.website , 'label_profile_website', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.website) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.dateOfBirth) }}
-            {{ form_label(form.dateOfBirth, 'label_profile_dob', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.dateOfBirth) }}</div>
+            {{ form_label(form.dateOfBirth, 'label_profile_dob', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.dateOfBirth) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.biography) }}
-            {{ form_label(form.biography, 'label_profile_biography', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.biography) }}</div>
+            {{ form_label(form.biography, 'label_profile_biography', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.biography) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.locale) }}
-            {{ form_label(form.locale, 'label_profile_locale', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.locale) }}</div>
+            {{ form_label(form.locale, 'label_profile_locale', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.locale) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.timezone) }}
-            {{ form_label(form.timezone, 'label_profile_timezone', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.timezone) }}</div>
+            {{ form_label(form.timezone, 'label_profile_timezone', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.timezone) }}
         </div>
-        <div class="control-group">
+        <div class="form-item">
             {{ form_errors(form.phone) }}
-            {{ form_label(form.phone, 'label_profile_phone', {'attr': {'class': 'control-label'}}) }}
-            <div class="controls">{{ form_widget(form.phone) }}</div>
+            {{ form_label(form.phone, 'label_profile_phone', {'attr': {'class': ''}}) }}
+            {{ form_widget(form.phone) }}
         </div>
 
         {{ form_rest(form) }}
-        <input type="submit" name="submit"  class="btn btn-primary" value="{{ 'sonata_user_submit'|trans({}, 'SonataUserBundle') }}" />
+        <div class="form-actions">
+            <input type="submit" value="{{ 'sonata_user_submit'|trans({}, 'SonataUserBundle') }}" class="button form-submit"/>
+        </div>
     </form>
 {% endblock %}
