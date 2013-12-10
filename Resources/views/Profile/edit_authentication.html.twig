@@ -1,0 +1,46 @@
+{% extends "PrestaCMSUserBundle:Profile:action.html.twig" %}
+
+{% block sonata_profile_title %}
+    {{ "title_user_account" | trans({}, 'SonataUserBundle')}}
+{% endblock %}
+
+
+{% block sonata_profile_content %}
+    <div class="row">
+        <div class="span6">
+            <form action="{{ path('sonata_user_profile_edit_authentication') }}" method="POST">
+
+                <div class="form-item">
+                    {{ form_errors(form.username) }}
+                    {{ form_label(form.username) }}
+                    {{ form_widget(form.username) }}
+                </div>
+                <div class="form-item">
+                    {{ form_errors(form.email) }}
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email) }}
+                </div>
+                <div class="form-item">
+                    {{ form_errors(form.current_password) }}
+                    {{ form_label(form.current_password) }}
+                    {{ form_widget(form.current_password) }}
+                </div>
+
+                {{ form_rest(form) }}
+                <div class="form-actions">
+                    <div class="pull-left">
+                        <input type="submit" value="{{ 'sonata_user_submit'|trans({}, 'SonataUserBundle') }}" class="button form-submit"/>
+                    </div>
+                    <div class="pull-right">
+                        <a href="{{ path('fos_user_change_password') }}" class="btn">
+                            <i class="icon-lock"></i>&nbsp;{{ 'sonata_change_password_link'|trans({}, 'SonataUserBundle') }}
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span6">
+
+        </div>
+    </div>
+{% endblock %}
