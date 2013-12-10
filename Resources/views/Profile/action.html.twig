@@ -9,6 +9,9 @@
         {% block sonata_profile_menu %}
             {{ sonata_block_render({'type': 'sonata.user.block.menu'}, {'current_uri': app.request.requestUri}) }}
         {% endblock %}
+        <a href="{{ path('fos_user_security_logout') }}" class="pull-right">
+            <i class="icon-lock"></i>&nbsp;{{ 'btn.logout'|trans({}, "PrestaCMSUserBundle") }}
+        </a>
     </div>
 
     <div class="span10">
