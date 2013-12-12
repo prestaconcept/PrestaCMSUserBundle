@@ -57,3 +57,7 @@ Released under the MIT License
 [4]: http://prestaconcept.github.io/presta-cms-user/
 [5]: http://sandbox.prestacms.com/
 [6]: http://sandbox.prestacms.com/admin
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacmsuserbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
