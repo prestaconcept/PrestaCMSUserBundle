@@ -2,9 +2,13 @@ PrestaCMSUserBundle
 ======================
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSUserBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSUserBundle)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSUserBundle/badges/quality-score.png?s=2d0fa3db5a1a1c923b52e0f4fb2358d50f593c51)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSUserBundle/)
+[![Latest Stable Version](https://poser.pugx.org/presta/cms-user-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-user-bundle)
+[![Total Downloads](https://poser.pugx.org/presta/cms-user-bundle/downloads.png)](https://packagist.org/packages/presta/cms-user-bundle)
 
-[![Latest Stable Version](https://poser.pugx.org/presta/cms-contact-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-contact-bundle)
-[![Total Downloads](https://poser.pugx.org/presta/cms-contact-bundle/downloads.png)](https://packagist.org/packages/presta/cms-contact-bundle)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/7834b609-01ce-429b-8365-b9510663d127/big.png)](https://insight.sensiolabs.com/projects/7834b609-01ce-429b-8365-b9510663d127)
+[![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSUserBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSUserBundle)
+
 
 #Overview #
 
