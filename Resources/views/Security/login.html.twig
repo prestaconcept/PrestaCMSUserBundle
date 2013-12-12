@@ -1,0 +1,48 @@
+{% extends "PrestaCMSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    {% if error %}
+        <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
+    {% endif %}
+    <div class="row">
+        <div class="connection span6 offset3">
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                <div class="form-item">
+                    <label for="username" class="control-label">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                </div>
+
+
+                <div class="form-item">
+                    <label for="password" class="control-label">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+                    <input type="password" id="password" name="_password" required="required" />
+                </div>
+
+                <div class="form-item">
+                    <label for="remember_me">
+                        <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                        {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                    </label>
+                </div>
+
+                <div class="form-item">
+                    <div class="controls">
+                        <a href="{{ path('fos_user_resetting_request') }}">{{ 'forgotten_password'|trans({}, 'SonataUserBundle') }}</a>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <div class="controls">
+                        <a href="{{ path('fos_user_registration_register') }}">{{ 'link_register'|trans({}, 'SonataUserBundle') }}</a>
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" class="button form-submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock fos_user_content %}
