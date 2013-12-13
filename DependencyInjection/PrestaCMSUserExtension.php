@@ -28,6 +28,6 @@ class PrestaCMSUserExtension extends Extension
         $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        //$loader->load('services.xml');
+        $loader->load('block.xml');
     }
 }

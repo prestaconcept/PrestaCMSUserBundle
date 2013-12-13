@@ -6,6 +6,22 @@
                 <source>btn.logout</source>
                 <target>Déconnexion</target>
             </trans-unit>
+            <trans-unit id="presta_cms_user.block.user_info.title">
+                <source>presta_cms_user.block.user_info.title</source>
+                <target>Mon compte</target>
+            </trans-unit>
+            <trans-unit id="presta_cms_user.block.user_info.logout.link">
+                <source>presta_cms_user.block.user_info.logout.link</source>
+                <target>Déconnexion</target>
+            </trans-unit>
+            <trans-unit id="presta_cms_user.block.user_info.login.link">
+                <source>presta_cms_user.block.user_info.login.link</source>
+                <target>Connexion</target>
+            </trans-unit>
+            <trans-unit id="presta_cms_user.block.user_info.my_account.link">
+                <source>presta_cms_user.block.user_info.my_account.link</source>
+                <target>Mon compte</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

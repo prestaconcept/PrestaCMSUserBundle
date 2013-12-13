@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="PrestaCMSCoreBundle.en.xliff">
+        <body>
+            <trans-unit id="block.title.presta_cms_user.block.user_info">
+                <source>block.title.presta_cms_user.block.user_info</source>
+                <target>User Info</target>
+            </trans-unit>
+            <trans-unit id="block.description.presta_cms_user.block.user_info">
+                <source>block.description.presta_cms_user.block.user_info</source>
+                <target>Provide user information and a link to my account section</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

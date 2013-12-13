@@ -1,0 +1,26 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% trans_default_domain "PrestaCMSUserBundle" %}
+
+{% block block %}
+    {% if (app.user) %}
+        <p><strong>{{ app.user.fullname }}</strong></p>
+        <div>
+        <a href="{{ path('sonata_user_profile_show') }}">
+            {{ 'presta_cms_user.block.user_info.my_account.link' | trans }}
+        </a>
+        </div>
+        <div style="padding: 10px 0px;">
+            <a href="{{ path('fos_user_security_logout') }}" class="btn pull-right btn-small">
+                <i class="icon-lock"></i>&nbsp;{{ 'presta_cms_user.block.user_info.logout.link' | trans }}
+            </a>
+        </div>
+    {% else %}
+        <h3>{{ 'presta_cms_user.block.user_info.title' | trans }}</h3>
+        <div style="padding: 10px 0px;">
+            <a href="{{ path('sonata_user_profile_show') }}" class="btn pull-right btn-small">
+                <i class="icon-lock"></i>&nbsp;{{ 'presta_cms_user.block.user_info.login.link' | trans }}
+            </a>
+        </div>
+    {% endif %}
+{% endblock %}
