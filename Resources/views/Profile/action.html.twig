@@ -5,7 +5,7 @@
 
 <div class="sonata-user-show row">
 
-    <div class="span2 well" style="padding: 8px 0;">
+    <div class="col-md-2 span2 well" style="padding: 8px 0;">
         {% block sonata_profile_menu %}
             {{ sonata_block_render({'type': 'sonata.user.block.menu'}, {'current_uri': app.request.requestUri}) }}
         {% endblock %}
@@ -14,7 +14,7 @@
         </a>
     </div>
 
-    <div class="span10">
+    <div class="col-md-10 span10">
         {% for message in app.session.flashbag.get('fos_user_success') %}
             <div class="alert alert-success">
                 {{ message|trans({}, "SonataUserBundle") }}
