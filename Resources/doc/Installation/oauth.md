@@ -111,3 +111,14 @@ security:
         - { path: ^/user/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/user/connect, role: IS_AUTHENTICATED_ANONYMOUSLY }
 ```
+
+You can find an example below to how to add a "Sign in with twitter" link in your login page
+
+```
+<a href="{{ path('hwi_oauth_service_redirect', {'service': 'twitter' }) }}" alt="Sign in with Twitter">Sign in with Twitter</a>
+```
+
+Useful link to setup some oauth provides
++ Twitter: [https://dev.twitter.com/docs/auth/using-oauth](https://dev.twitter.com/docs/auth/using-oauth)
++ Facebook: [https://developers.facebook.com/docs/facebook-login/](https://developers.facebook.com/docs/facebook-login/)
++ Google+: [https://developers.google.com/accounts/docs/OAuth2Login](https://developers.google.com/accounts/docs/OAuth2Login)
