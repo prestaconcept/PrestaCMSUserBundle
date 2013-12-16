@@ -17,7 +17,8 @@
         "php": ">=5.3.2"
     },
     "suggest": {
-        "presta/cms-core-bundle": "1.0.*"
+        "presta/cms-core-bundle": "1.0.*",
+        "hwi/oauth-bundle": "0.3.*@dev"
     },
     "autoload": {
         "psr-0": { "Presta\\CMSUserBundle": "" }
