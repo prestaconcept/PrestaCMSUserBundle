@@ -3,5 +3,4 @@ sonata_block:
         presta_cms_user.block.user_info:
         sonata.user.block.menu:
             contexts: [user]
-
-
+        sonata.user.block.menu:
